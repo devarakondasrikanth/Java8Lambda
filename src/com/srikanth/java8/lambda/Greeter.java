@@ -2,17 +2,27 @@ package com.srikanth.java8.lambda;
 
 public class Greeter {
 	
-	public void greet(){
-		System.out.println("Welocme to java8 Programming with lambdas");
+	public void greet(MyLambdaPrint lambdaPrint){
+		lambdaPrint.print();
 	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Greeter g = new Greeter();
-		g.greet();
+		MyLambdaPrint lambdaGreeting = () -> System.out.println("My first lambda expression program");
+		
+		MyLambdaAdd addLamdaFunction = (int a,int b) -> a+b;
+		
+		g.greet(lambdaGreeting);
 	}
 	
-	lambdaGreeting = () -> {
-		System.out.println("My first lambda expression");
-	}
+	
+}
+
+interface MyLambdaPrint{
+	void print();
+}
+
+interface MyLambdaAdd{
+	int add(int a,int b);
 }

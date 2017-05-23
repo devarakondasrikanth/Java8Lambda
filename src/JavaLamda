@@ -18,3 +18,22 @@ Java 8
 	Enables you to write code which is eligant
 	
 	
+	greeting = () -> System.out.println("Hi welcome to java 8 lamda programming");
+	
+	doubleNumberFunction = (int a) -> a*2;
+	
+	addFunction = (int a,int b) -> a+b;
+	
+	safeDivide = (int a,int b) -> {
+		if(b==0) return 0;
+		return a/b;
+	};
+	
+	stringLengthCountFunction = (String str) -> {
+		return s.length;
+	};
+
+Functional Interface
+
+Lambda is not creating a Anonymous inner class
+	
