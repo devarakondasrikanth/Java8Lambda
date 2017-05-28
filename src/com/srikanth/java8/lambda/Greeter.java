@@ -13,7 +13,9 @@ public class Greeter {
 		
 		MyLambdaAdd addLamdaFunction = (int a,int b) -> a+b;
 		
+		
 		g.greet(lambdaGreeting);
+		System.out.println(addLamdaFunction.add(10, 20));		
 	}
 	
 	
