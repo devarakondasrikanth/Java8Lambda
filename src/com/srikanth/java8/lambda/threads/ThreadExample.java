@@ -7,7 +7,7 @@ public class ThreadExample {
 		Thread t1 = new Thread(()->System.out.println("In new Thread"));
 		t1.start();
 		
-		System.out.println("In main Thread");
+		System.out.println("In main Thread example");
 	}
 
 }
